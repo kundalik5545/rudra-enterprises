@@ -15,6 +15,7 @@ import { Phone, Youtube } from "lucide-react";
 export default function Home() {
   const websiteName = process.env.NEXT_PUBLIC_WEBSITE_NAME;
   const callMe = process.env.NEXT_PUBLIC_CALL;
+  const ytLink = process.env.NEXT_PUBLIC_YOUTUBE_LINK;
   return (
     <div className="min-h-screen bg-white ">
       {/* Hero Section */}
@@ -40,7 +41,7 @@ export default function Home() {
                 <span>Book Service</span>
               </Button>
             </Link>
-            <Link href="https://www.youtube.com/@qatesting-app">
+            <Link href={ytLink}>
               <Button size="lg" variant="demo">
                 <Youtube className="w-24 h-24" />
                 Watch Demo
